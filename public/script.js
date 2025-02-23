@@ -18,6 +18,7 @@ function sendMessage() {
 }
 
 socket.on('chatMessage', (message) => {
+    console.log(message);
     const messageElement = document.createElement('div');
     messageElement.textContent = message;
     messageElement.classList.add('message');
